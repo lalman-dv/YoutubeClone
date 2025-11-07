@@ -56,10 +56,11 @@ const PlayVideo = () => {
         <hr className="border-0 h-px bg-gray-400 my-2.5 mx-0" />
         <h4 className="text-[14px] text-gray-500 mt-4">140 Comments</h4>
         {/* comment section */}
-        <div className=" flex  my-5 mx-0">
-          <img src={user_profile} alt="" />
+        <div className="inline-flex my-5 mx-0">
+          <img
+          className="w-9 rounded-full mr-4" src={user_profile} alt="" />
           <div>
-            Jack Sparrow <span>1 day ago</span>
+            <h3 className="text-sm mb-0.5">Jack Sparrow <span className="text-[12px] text-gray-500 font-medium ml-2 ">1 day ago</span></h3>
           </div>
           <p>
             such a cool place to see, i would definitely plan to go there as
