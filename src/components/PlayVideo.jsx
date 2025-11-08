@@ -56,50 +56,124 @@ const PlayVideo = () => {
         <hr className="border-0 h-px bg-gray-400 my-2.5 mx-0" />
         <h4 className="text-[14px] text-gray-500 mt-4">140 Comments</h4>
         {/* comment section */}
-        <div className="inline-flex my-5 mx-0">
+        <div className="flex items-start my-5 mx-0">
           <img
-          className="w-9 rounded-full mr-4" src={user_profile} alt="" />
+            className="w-9 h-9 rounded-full mr-4"
+            src={user_profile}
+            alt=""
+          />
           <div>
-            <h3 className="text-sm mb-0.5">Jack Sparrow <span className="text-[12px] text-gray-500 font-medium ml-2 ">1 day ago</span></h3>
-          </div>
-          <p>
-            such a cool place to see, i would definitely plan to go there as
-            soon as possible. Thanks for suggesting and showing such places
-          </p>
-          <div>
-            <img src={like} alt="" />
-            <span>244</span>
-            <img src={dislike} alt="" />
-          </div>
-        </div>
-        <div>
-          <img src={user_profile} alt="" />
-          <div>
-            Jack Sparrow <span>1 day ago</span>
-          </div>
-          <p>
-            such a cool place to see, i would definitely plan to go there as
-            soon as possible. Thanks for suggesting and showing such places
-          </p>
-          <div>
-            <img src={like} alt="" />
-            <span>244</span>
-            <img src={dislike} alt="" />
+            <h3 className="text-sm mb-0.5">
+              Jack Sparrow{" "}
+              <span className="text-[12px] text-gray-500 font-medium ml-2 ">
+                1 day ago
+              </span>
+            </h3>
+            <p>
+              such a cool place to see, i would definitely plan to go there as
+              soon as possible. Thanks for suggesting and showing such places
+            </p>
+            <div className="flex items-center my-2 mx-0 text-sm">
+              <img className="w-5 mr-1" src={like} alt="" />
+              <span className="mr-5 text-gray-500">244</span>
+              <img className="w-5 mr-1" src={dislike} alt="" />
+            </div>
           </div>
         </div>
-        <div>
-          <img src={user_profile} alt="" />
+        <div className="flex items-start my-5 mx-0">
+          <img
+            className="w-9 h-9 rounded-full mr-4"
+            src={user_profile}
+            alt=""
+          />
           <div>
-            Jack Sparrow <span>1 day ago</span>
+            <h3 className="text-sm mb-0.5">
+              Jack Sparrow{" "}
+              <span className="text-[12px] text-gray-500 font-medium ml-2 ">
+                1 day ago
+              </span>
+            </h3>
+            <p>
+              such a cool place to see, i would definitely plan to go there as
+              soon as possible. Thanks for suggesting and showing such places
+            </p>
+            <div className="flex items-center my-2 mx-0 text-sm">
+              <img className="w-5 mr-1" src={like} alt="" />
+              <span className="mr-5 text-gray-500">244</span>
+              <img className="w-5 mr-1" src={dislike} alt="" />
+            </div>
           </div>
-          <p>
-            such a cool place to see, i would definitely plan to go there as
-            soon as possible. Thanks for suggesting and showing such places
-          </p>
+        </div>
+        <div className="flex items-start my-5 mx-0">
+          <img
+            className="w-9 h-9 rounded-full mr-4"
+            src={user_profile}
+            alt=""
+          />
           <div>
-            <img src={like} alt="" />
-            <span>244</span>
-            <img src={dislike} alt="" />
+            <h3 className="text-sm mb-0.5">
+              Jack Sparrow{" "}
+              <span className="text-[12px] text-gray-500 font-medium ml-2 ">
+                1 day ago
+              </span>
+            </h3>
+            <p>
+              such a cool place to see, i would definitely plan to go there as
+              soon as possible. Thanks for suggesting and showing such places
+            </p>
+            <div className="flex items-center my-2 mx-0 text-sm">
+              <img className="w-5 mr-1" src={like} alt="" />
+              <span className="mr-5 text-gray-500">244</span>
+              <img className="w-5 mr-1" src={dislike} alt="" />
+            </div>
+          </div>
+        </div>
+        <div className="flex items-start my-5 mx-0">
+          <img
+            className="w-9 h-9 rounded-full mr-4"
+            src={user_profile}
+            alt=""
+          />
+          <div>
+            <h3 className="text-sm mb-0.5">
+              Jack Sparrow{" "}
+              <span className="text-[12px] text-gray-500 font-medium ml-2 ">
+                1 day ago
+              </span>
+            </h3>
+            <p>
+              such a cool place to see, i would definitely plan to go there as
+              soon as possible. Thanks for suggesting and showing such places
+            </p>
+            <div className="flex items-center my-2 mx-0 text-sm">
+              <img className="w-5 mr-1" src={like} alt="" />
+              <span className="mr-5 text-gray-500">244</span>
+              <img className="w-5 mr-1" src={dislike} alt="" />
+            </div>
+          </div>
+        </div>
+        <div className="flex items-start my-5 mx-0">
+          <img
+            className="w-9 h-9 rounded-full mr-4"
+            src={user_profile}
+            alt=""
+          />
+          <div>
+            <h3 className="text-sm mb-0.5">
+              Jack Sparrow{" "}
+              <span className="text-[12px] text-gray-500 font-medium ml-2 ">
+                1 day ago
+              </span>
+            </h3>
+            <p>
+              such a cool place to see, i would definitely plan to go there as
+              soon as possible. Thanks for suggesting and showing such places
+            </p>
+            <div className="flex items-center my-2 mx-0 text-sm">
+              <img className="w-5 mr-1" src={like} alt="" />
+              <span className="mr-5 text-gray-500">244</span>
+              <img className="w-5 mr-1" src={dislike} alt="" />
+            </div>
           </div>
         </div>
       </div>
