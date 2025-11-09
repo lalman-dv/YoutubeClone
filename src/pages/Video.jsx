@@ -7,7 +7,7 @@ const Video = () => {
   return (
     <div className="bg-white px-[2%] py-5 flex justify-between flex-wrap">
       <PlayVideo videoId={videoId} />
-      <RecommendedVideos />
+      <RecommendedVideos categoryId={categoryId} />
     </div>
   );
 };

@@ -6,7 +6,7 @@ import moment from "moment";
 const Feed = ({ sidebar, category }) => {
   const [data, setData] = useState([]);
   const fetchData = async () => {
-    const videoList_url = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=US&videoCategoryId=${category}&key=${API_KEY}`;
+    const videoList_url = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&videoCategoryId=${category}&key=${API_KEY}`;
     await fetch(videoList_url)
       .then((response) => response.json())
       .then((data) => setData(data.items));
@@ -16,9 +16,9 @@ const Feed = ({ sidebar, category }) => {
   }, [category]);
   return (
     <div
-      className={` ${
-        sidebar ? "ml-[15%]" : "ml-[8%]"
-      } grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-x-4 gap-y-7  mt-4  mr-[2%]`}
+      className={` ml-4 sm:${
+        sidebar ? "ml-[22%] md:ml-[15%]" : "ml-[8%]"
+      } grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-x-4 gap-y-7  mt-4  mr-4 sm:mr-[2%]`}
     >
       {data.map((item, index) => {
         return (

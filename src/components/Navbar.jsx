@@ -6,6 +6,7 @@ import more_icon from "../assets/more.png";
 import notification_icon from "../assets/notification.png";
 import profile_icon from "../assets/jack.png";
 import { Link } from "react-router-dom";
+import { Bell, Mic, Plus } from "lucide-react";
 
 const Navbar = ({ setSidebar }) => {
   return (
@@ -13,26 +14,36 @@ const Navbar = ({ setSidebar }) => {
       <div className="flex items-center">
         <img
           src={menu_icon}
-          className="w-5 mr-6"
+          className="w-5 mr-6 hidden sm:inline cursor-pointer"
           onClick={() => setSidebar((prev) => !prev)}
         />
         <Link to="/">
           <img src={logo_icon} className="w-15 sm:w-33" />
         </Link>
       </div>
-
-      <div className="flex items-center border border-gray-300 mr-4 rounded-3xl py-2 px-3 ">
+<div className="flex items-center">
+      <div className="flex items-center border border-gray-300 mr-4 rounded-3xl py-2 px-3 cursor-pointer">
         <input
           type="text"
           placeholder="search"
-          className="w-15 lg:w-100 md:w-50  border-0 outline-0 bg-transparent"
+          className="w-50 md:w-100 border-0 outline-0 bg-transparent"
         />
         <img src={search_icon} className="w-4 " />
       </div>
-      <div className="flex items-center ">
-        <img src={upload_icon} className="w-5 sm:w-6 mr-5 sm:mr-6" />
-        <img src={more_icon} className="w-5 sm:w-6 mr-5 sm:mr-6" />
-        <img src={notification_icon} className="w-5 sm:w-6 mr-5 sm:mr-6" />
+      <div className="h-9 w-9 mr-4 rounded-full bg-gray-300 items-center justify-center cursor-pointer hidden sm:flex">
+        <Mic />
+      </div>
+</div>
+      <div className="items-center flex">
+        <div className="hidden sm:flex justify-center items-center w-22 h-9 mr-4 bg-gray-300 rounded-full cursor-pointer">
+          <Plus />
+          <p>Create</p>
+        </div>
+
+        <div className="mr-4 cursor-pointer hidden sm:inline">
+          <Bell />
+        </div>
+
         <img
           src={profile_icon}
           className="w-7 sm:w-9 mr-4 sm:mr-6 rounded-full"

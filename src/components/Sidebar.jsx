@@ -16,7 +16,7 @@ import cameron from "../assets/cameron.png";
 const Sidebar = ({ sidebar, category, setCategory }) => {
   return (
     <div
-      className={`bg-white h-screen fixed top-0 pl-[2%] pt-20 transition-all duration-300 ${
+      className={`hidden sm:inline bg-white h-screen fixed top-0 pl-[2%] pr-[2%] sm:pr-0 pt-20 transition-all duration-300 ${
         sidebar ? "w-[15%]" : "w-[8%]"
       }`}
     >

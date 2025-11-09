@@ -1,16 +1,49 @@
-# React + Vite
+# YouTube Clone 🎥
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive YouTube clone built with **React**, **Tailwind CSS**, and the **YouTube Embed API**.  
+This project replicates the core layout and functionality of YouTube, including video playback, sidebar navigation, and responsive design.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- **Responsive Navbar** with search bar and icon partition styling (reverse‑engineered from YouTube’s layout)
+- **Sidebar Navigation** with categories and subscriptions
+- **Video Player Page** with embedded YouTube iframe
+- **Recommended Videos Section** (horizontal carousel + sidebar list)
+- **Responsive Layouts**:
+  - Flex layout on small/medium screens
+  - Stacked layout on mobile
+  - Grid/block layout on large screens
+- **Custom Styling**:
+  - Tailwind utilities for spacing, flex, and breakpoints
+  - Vanilla CSS for iframe responsiveness (`vh` units + media queries) — Tailwind properties weren’t applying correctly to iframe, so I handled it with CSS
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
+- **React** (functional components, hooks)
+- **Tailwind CSS** (utility‑first styling)
+- **Vanilla CSS** (iframe responsiveness)
+- **YouTube Embed API** for video playback
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📱 Responsiveness
+- Works across mobile, tablet, and desktop
+- Sidebar collapses below `1024px`
+- Video iframe scales with viewport height (`62vh` → `40vh`)
+
+---
+
+## 📌 Notes
+- Tested responsiveness both via browser resizing and DevTools
+- Sidebar + video layout collapses gracefully on mobile
+- API key is securely managed via `.env` (not exposed in repo)
+
+---
+
+## 🌐 Deployment
+This project is deployed on **Netlify**.  
+👉 [Live Demo](https://your-netlify-link.netlify.app) *(replace with your actual link)*
+
+---
